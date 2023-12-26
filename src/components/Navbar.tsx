@@ -6,7 +6,7 @@ export default function Navbar() {
 		<div className="w-full flex justify-between fixed top-0 left-0 sm:p-12 p-4 ">
 			{/* site name */}
 			<section>
-				<h1 className="text-2xl flex items-center flex-col">
+				<h1 className="text-xl sm:text-2xl flex items-center flex-col">
 					<PiDiamondsFourLight />
 					<span>satya.dev</span>
 				</h1>
@@ -16,7 +16,7 @@ export default function Navbar() {
 
 			{/* navigation */}
 			<section>
-				<nav className="text-2xl flex flex-col items-end">
+				<nav className="text-lg sm:text-2xl flex flex-col items-end">
 					<NavbarButton to="/" name="Main" />
 					<NavbarButton to="/skills" name="Skills" />
 					<NavbarButton to="/projects" name="Projects" />
