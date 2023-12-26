@@ -1,5 +1,5 @@
 import { PiDiamondsFourLight } from "react-icons/pi";
-import { NavLink } from "react-router-dom";
+import NavbarButton from "./NavbarButton";
 
 export default function Navbar() {
 	return (
@@ -17,50 +17,10 @@ export default function Navbar() {
 			{/* navigation */}
 			<section>
 				<nav className="text-2xl flex flex-col items-end">
-					<NavLink to="/">
-						{({ isActive }) => (
-							<span
-								className={`px-4 py-1 flex justi hover:bg-black hover:text-gray-200 hover:rounded-xl duration-200 ${
-									isActive ? "bg-black text-gray-200 " : ""
-								}`}
-							>
-								Main
-							</span>
-						)}
-					</NavLink>
-					<NavLink to="/skills">
-						{({ isActive }) => (
-							<span
-								className={`px-4 py-1 flex justi hover:bg-black hover:text-gray-200 hover:rounded-xl duration-200 ${
-									isActive ? "bg-black text-gray-200 " : ""
-								}`}
-							>
-								Skills
-							</span>
-						)}
-					</NavLink>
-					<NavLink to="/projects">
-						{({ isActive }) => (
-							<span
-								className={`px-4 py-1 flex justi hover:bg-black hover:text-gray-200 hover:rounded-xl duration-200 ${
-									isActive ? "bg-black text-gray-200 " : ""
-								}`}
-							>
-								Projects
-							</span>
-						)}
-					</NavLink>
-					<NavLink to="/Contact">
-						{({ isActive }) => (
-							<span
-								className={`px-4 py-1 flex justi hover:bg-black hover:text-gray-200 hover:rounded-xl duration-200 ${
-									isActive ? "bg-black text-gray-200 " : ""
-								}`}
-							>
-								Contact
-							</span>
-						)}
-					</NavLink>
+					<NavbarButton to="/" name="Main" />
+					<NavbarButton to="/skills" name="Skills" />
+					<NavbarButton to="/projects" name="Projects" />
+					<NavbarButton to="/contact" name="Contact" />
 				</nav>
 			</section>
 		</div>
