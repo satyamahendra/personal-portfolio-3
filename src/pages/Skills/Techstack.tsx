@@ -4,7 +4,7 @@ import { SiTailwindcss, SiTypescript, SiJavascript } from "react-icons/si";
 export default function Techstack() {
 	return (
 		<section className="flex flex-col items-center w-3/5 gap-4 px-4 sm:px-8">
-			<h2 className="w-full pb-4 text-2xl text-center border-b border-gray-400">
+			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Tech stack
 			</h2>
 			<ul className="flex flex-col gap-2 text-sm font-normal tracking-wide duration-200 sm:gap-4">
