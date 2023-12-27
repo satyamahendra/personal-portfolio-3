@@ -1,6 +1,7 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import { PiGearLight } from "react-icons/pi";
+import NavbarButton from "./NavbarButton";
 
 export default function Skills() {
 	return (
@@ -12,61 +13,15 @@ export default function Skills() {
 						<PiGearLight /> Skills
 					</h2>
 					<nav className="flex flex-col text-sm duration-200 sm:text-base">
-						<NavLink to="." end>
-							{({ isActive }) => (
-								<div
-									className={`px-2 py-2 hover:rounded-xl duration-200 hover:bg-black hover:text-gray-200 ${
-										isActive ? "bg-black text-gray-200" : ""
-									}`}
-								>
-									Tech Stack
-								</div>
-							)}
-						</NavLink>
-						<NavLink to="code">
-							{({ isActive }) => (
-								<div
-									className={`px-2 py-2 hover:rounded-xl duration-200 hover:bg-black hover:text-gray-200 ${
-										isActive ? "bg-black text-gray-200" : ""
-									}`}
-								>
-									Code
-								</div>
-							)}
-						</NavLink>
-						<NavLink to="uiux">
-							{({ isActive }) => (
-								<div
-									className={`px-2 py-2 hover:rounded-xl duration-200 hover:bg-black hover:text-gray-200 ${
-										isActive ? "bg-black text-gray-200" : ""
-									}`}
-								>
-									UI/UX
-								</div>
-							)}
-						</NavLink>
-						<NavLink to="communication">
-							{({ isActive }) => (
-								<div
-									className={`px-2 py-2 hover:rounded-xl duration-200 hover:bg-black hover:text-gray-200 ${
-										isActive ? "bg-black text-gray-200" : ""
-									}`}
-								>
-									Communication
-								</div>
-							)}
-						</NavLink>
-						<NavLink to="environment">
-							{({ isActive }) => (
-								<div
-									className={`px-2 py-2 hover:rounded-xl duration-200 hover:bg-black hover:text-gray-200 ${
-										isActive ? "bg-black text-gray-200" : ""
-									}`}
-								>
-									Environment
-								</div>
-							)}
-						</NavLink>
+						<NavbarButton url="." isEnd={true} name="Tech stack" />
+						<NavbarButton url="code" isEnd={false} name="Coding style" />
+						<NavbarButton url="uiux" isEnd={false} name="UI/UX" />
+						<NavbarButton
+							url="communication"
+							isEnd={false}
+							name="Communication"
+						/>
+						<NavbarButton url="environment" isEnd={false} name="Environment" />
 					</nav>
 				</section>
 			</div>
