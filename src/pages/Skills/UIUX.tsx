@@ -2,6 +2,7 @@ import {
 	PiDeviceMobileCameraLight,
 	PiDevicesLight,
 	PiSquareLight,
+	PiCircleLight,
 } from "react-icons/pi";
 
 export default function UIUX() {
@@ -10,7 +11,7 @@ export default function UIUX() {
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				UI/UX
 			</h2>
-			<ul className="flex flex-col gap-8">
+			<ul className="flex flex-col gap-8 overflow-auto">
 				<li className="flex items-center gap-4">
 					<div>
 						<h3 className="flex items-center gap-2 mb-1">
@@ -37,6 +38,15 @@ export default function UIUX() {
 					</h3>
 					<p className="pl-2 text-sm border-l border-gray-400">
 						I create clean pixel perfect design to keep it tidy and nice.
+					</p>
+				</li>
+				<li>
+					<h3 className="flex items-center gap-2 mb-1">
+						<PiCircleLight /> Simplicity
+					</h3>
+					<p className="pl-2 text-sm border-l border-gray-400">
+						I'm obsessed with simplicity. I hate complex stuff but im open to
+						challenges.
 					</p>
 				</li>
 			</ul>

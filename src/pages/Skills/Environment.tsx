@@ -6,7 +6,7 @@ export default function Environment() {
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Environment
 			</h2>
-			<ul className="flex flex-col gap-8">
+			<ul className="flex flex-col gap-8 overflow-auto">
 				<li className="flex items-center gap-4">
 					<div>
 						<h3 className="flex items-center gap-2 mb-1">

@@ -7,7 +7,7 @@ export default function Techstack() {
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Tech stack
 			</h2>
-			<ul className="flex flex-col gap-2 text-sm font-normal tracking-wide duration-200 sm:gap-4">
+			<ul className="flex flex-col gap-2 overflow-auto text-sm font-normal tracking-wide duration-200 sm:gap-4">
 				<li className="flex items-center gap-4 ">
 					<div className="p-2 bg-orange-400 rounded-xl">
 						<FaHtml5 className="text-3xl text-white" />
