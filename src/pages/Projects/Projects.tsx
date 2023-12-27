@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-
+// @ts-ignore
 import { projectData } from "../../data/projectsData";
 
 type ProjectType = {
