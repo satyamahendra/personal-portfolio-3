@@ -49,28 +49,3 @@ export default function Techstack() {
 		</section>
 	);
 }
-
-{
-	/* <ul className="flex flex-col gap-4 text-sm font-bold">
-				<li className="flex flex-col items-center justify-between w-20 h-20 p-2 text-gray-200 bg-orange-400 border border-orange-400">
-					<FaHtml5 className="text-4xl" />
-					HTML5
-				</li>
-				<li className="flex flex-col items-center justify-between w-20 h-20 p-2 text-gray-200 bg-blue-400 border border-blue-400">
-					<FaCss3Alt className="text-4xl" />
-					CSS
-				</li>
-				<li className="flex flex-col items-center justify-between w-20 h-20 p-2 text-gray-200 bg-yellow-400 border border-yellow-400">
-					<FaJs className="text-4xl" />
-					JavaScript
-				</li>
-				<li className="flex flex-col items-center justify-between w-20 h-20 p-2 text-gray-200 bg-blue-300 border border-blue-300">
-					<FaReact className="text-4xl" />
-					ReactJS
-				</li>
-				<li className="flex flex-col items-center justify-between w-20 h-20 p-2 text-gray-200 bg-blue-300 border border-blue-300">
-					<SiTailwindcss className="text-4xl" />
-					TailwindCSS
-				</li>
-			</ul> */
-}
