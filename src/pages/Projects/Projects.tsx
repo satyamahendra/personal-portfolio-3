@@ -5,6 +5,7 @@ import { projectData } from "../../data/projectsData";
 import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 
 import { Link } from "react-router-dom";
+import GithubCard from "./GithubCard";
 
 type ProjectType = {
 	id: number;
@@ -28,12 +29,7 @@ export default function Projects() {
 
 				<ul className="grid w-full h-full gap-2 px-4 overflow-auto text-gray-200 sm:px-12 lg:grid-cols-5">
 					{projectsCardElement}
-					<li className="flex flex-col items-end justify-between p-4 text-gray-600 duration-200 border border-gray-400 hover:rounded-3xl h-36 lg:h-full group">
-						<h2 className="text-lg">My Github Repo</h2>
-						<button className="px-3 py-2 text-gray-200 bg-black border-black ">
-							Visit
-						</button>
-					</li>
+					<GithubCard />
 				</ul>
 			</div>
 
