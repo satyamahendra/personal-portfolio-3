@@ -45,7 +45,7 @@ export default function ProjectDetails() {
 
 	return (
 		<main className="flex justify-center h-screen">
-			<div className="flex flex-col w-full pt-40 pb-24 duration-200 sm:pt-48 max-w-7xl">
+			<div className="flex flex-col w-full pt-40 pb-16 duration-200 lg:pb-24 sm:pt-48 max-w-7xl">
 				<div className="flex flex-col w-full h-full gap-4 px-4 pt-8 overflow-auto sm:flex-row sm:px-12">
 					<section className="relative border border-gray-400 sm:w-2/3 aspect-video">
 						<div className="absolute z-10 flex w-full h-full ">
