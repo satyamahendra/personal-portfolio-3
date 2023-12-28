@@ -19,7 +19,7 @@ export default function Projects() {
 
 	return (
 		<main className="flex justify-center h-screen">
-			<div className="flex flex-col items-center w-full pb-24 duration-200 pt-28 sm:pt-40 max-w-7xl">
+			<div className="flex flex-col items-center w-full pt-32 pb-24 duration-200 sm:pt-40 max-w-7xl">
 				<h1 className="pb-8 text-2xl">Projects</h1>
 
 				<ul className="grid w-full h-full gap-2 px-4 overflow-auto text-gray-200 sm:px-12 lg:grid-cols-5">

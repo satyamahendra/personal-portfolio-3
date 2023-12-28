@@ -45,14 +45,7 @@ export default function ProjectDetails() {
 
 	return (
 		<main className="flex justify-center h-screen">
-			<div className="flex flex-col w-full pb-24 duration-200 pt-36 sm:pt-48 max-w-7xl">
-				<Link
-					to="/projects"
-					className="absolute flex items-center gap-2 px-4 sm:px-12"
-				>
-					<PiCaretLeftLight />
-					Back
-				</Link>
+			<div className="flex flex-col w-full pt-40 pb-24 duration-200 sm:pt-48 max-w-7xl">
 				<div className="flex flex-col w-full h-full gap-4 px-4 pt-8 overflow-auto sm:flex-row sm:px-12">
 					<section className="relative border border-gray-400 sm:w-2/3 aspect-video">
 						<div className="absolute z-10 flex w-full h-full ">
@@ -93,6 +86,16 @@ export default function ProjectDetails() {
 					</section>
 				</div>
 			</div>
+
+			<Link
+				to="/projects"
+				className="fixed bottom-0 flex items-center gap-2 px-3 py-1 mb-4 text-sm duration-200 group hover:-ml-4"
+			>
+				<div className="flex items-center justify-center w-6 h-6 duration-200 border border-gray-400 group-hover:bg-black group-hover:border-black group-hover:text-gray-200">
+					<PiCaretLeftLight />
+				</div>
+				Back to all projects
+			</Link>
 		</main>
 	);
 }
