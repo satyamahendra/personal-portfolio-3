@@ -53,7 +53,7 @@ export default function ProjectDetails() {
 								className="flex items-center justify-start w-1/2 px-2 duration-200 group"
 								onClick={prevIndex}
 							>
-								<div className="flex items-center justify-center w-8 h-8 text-white duration-200 bg-black group-hover:scale-110 sm:w-12 sm:h-12 rounded-xl bg-opacity-40 backdrop-blur-sm">
+								<div className="flex items-center justify-center w-8 h-8 text-xl text-white duration-200 bg-black group-hover:bg-opacity-75 group-hover:scale-110 sm:w-12 sm:h-12 rounded-xl bg-opacity-40 backdrop-blur-sm">
 									<PiCaretLeftLight />
 								</div>
 							</button>
@@ -62,7 +62,7 @@ export default function ProjectDetails() {
 								className="flex items-center justify-end w-1/2 px-2 group"
 								onClick={nextIndex}
 							>
-								<div className="flex items-center justify-center w-8 h-8 text-white duration-200 bg-black group-hover:scale-110 sm:w-12 sm:h-12 rounded-xl bg-opacity-40 backdrop-blur-sm">
+								<div className="flex items-center justify-center w-8 h-8 text-xl text-white duration-200 bg-black group-hover:scale-110 group-hover:bg-opacity-75 sm:w-12 sm:h-12 rounded-xl bg-opacity-40 backdrop-blur-sm">
 									<PiCaretRightLight />
 								</div>
 							</button>
