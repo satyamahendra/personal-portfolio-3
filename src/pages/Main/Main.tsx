@@ -1,10 +1,18 @@
 import MiddleSection from "./MiddleSection";
 import BottomSection from "./BottomSection";
 import ImageContainer from "./ImageContainer";
+import { useState } from "react";
+import ResumeModal from "./ResumeModal";
 
 export default function Main() {
+	const [showResumeModal, setShowResumeModal] = useState(false);
+
+	function toggleResumeModal(): void {
+		setShowResumeModal((prev) => !prev);
+	}
+
 	return (
-		<main className="h-screen bg-gray-100 flex justify-center items-center">
+		<main className="flex items-center justify-center h-screen bg-gray-100">
 			{/* IMAGE SECITON */}
 			<ImageContainer />
 
@@ -12,7 +20,9 @@ export default function Main() {
 			<MiddleSection />
 
 			{/* BOTTOM SECTION */}
-			<BottomSection />
+			<BottomSection toggleResumeModal={toggleResumeModal} />
+
+			{showResumeModal && <ResumeModal toggleResumeModal={toggleResumeModal} />}
 		</main>
 	);
 }
