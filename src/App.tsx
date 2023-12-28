@@ -9,6 +9,7 @@ import Code from "./pages/Skills/Code";
 import UIUX from "./pages/Skills/UIUX";
 import Communication from "./pages/Skills/Communication";
 import Environment from "./pages/Skills/Environment";
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="environment" element={<Environment />} />
 				</Route>
 				<Route path="/projects" element={<Projects />} />
+				<Route path="/projects/:id" element={<ProjectDetails />} />
 				<Route path="/contact" element={<Contact />} />
 			</Route>
 		</Routes>

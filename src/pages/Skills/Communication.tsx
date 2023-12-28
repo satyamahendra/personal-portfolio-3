@@ -13,7 +13,7 @@ export default function Communication() {
 						<h3 className="flex items-center gap-2 mb-1">
 							<PiHeartLight /> Polite & respectful
 						</h3>
-						<p className="pl-2 text-sm border-l border-gray-400">
+						<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 							I always communicate in the most respectful and polite way to
 							whoever.
 						</p>
@@ -23,7 +23,7 @@ export default function Communication() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<IoLanguageOutline /> Fluent in english & native
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I'm a native speaker and also fluently speak english.
 					</p>
 				</li>
@@ -31,7 +31,7 @@ export default function Communication() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiDoorOpenLight /> Open minded
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I'm open to criticism from other people regardless of who they are.
 					</p>
 				</li>

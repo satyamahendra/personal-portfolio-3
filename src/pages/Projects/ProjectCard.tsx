@@ -1,4 +1,10 @@
-import { PiPlayFill, PiCode, PiImageSquareFill } from "react-icons/pi";
+import {
+	// PiPlayFill,
+	// PiCode,
+	// PiImageSquareFill,
+	PiArrowRightLight,
+} from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 type ProjectPropsType = {
 	project: {
@@ -13,27 +19,24 @@ type ProjectPropsType = {
 };
 
 export default function ProjectCard({ project }: ProjectPropsType) {
-	const { title, image } = project;
+	const { id, title, image } = project;
 
 	return (
-		<li className="relative overflow-hidden h-36 lg:h-full group">
+		<li className="relative overflow-hidden text-gray-300 duration-200 h-36 lg:h-full group hover:rounded-3xl">
 			<img
 				src={image[1]}
 				className="absolute object-cover w-full h-full duration-200 group-hover:scale-110 "
 			/>
-			<div className="absolute z-10 flex flex-row-reverse justify-between w-full h-full p-4 duration-200 bg-black lg:flex-col bg-opacity-70 backdrop-blur-sm group-hover:bg-opacity-85">
-				<div className="flex flex-col items-end justify-between text-lg lg:gap-4 sm:text-2xl">
-					<button>
-						<PiPlayFill />
-					</button>
-					<button>
-						<PiCode />
-					</button>
-					<button>
-						<PiImageSquareFill />
-					</button>
-				</div>
-				<h1>{title}</h1>
+			<div className="absolute z-10 flex flex-col justify-between w-full h-full p-4 duration-200 bg-black bg-opacity-70 backdrop-blur-sm group-hover:bg-opacity-85">
+				<h1 className="flex flex-col items-start text-lg duration-200 lg:text-xl lg:self-auto group-hover:text-white">
+					{title}
+				</h1>
+				<Link
+					to={`/projects/${id}`}
+					className="flex items-center self-end gap-2 mr-2 duration-200 hover:mr-0 hover:text-white"
+				>
+					view project <PiArrowRightLight />
+				</Link>
 			</div>
 		</li>
 	);

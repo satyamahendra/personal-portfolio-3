@@ -17,7 +17,7 @@ export default function UIUX() {
 						<h3 className="flex items-center gap-2 mb-1">
 							<PiDevicesLight /> Fully responsive design
 						</h3>
-						<p className="pl-2 text-sm border-l border-gray-400">
+						<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 							I can build a flexible interface regardless of the user's screen
 							sizes.
 						</p>
@@ -27,7 +27,7 @@ export default function UIUX() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiDeviceMobileCameraLight /> Mobile first design
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I'm following best practices as making a design from a mobile device
 						perspective first.
 					</p>
@@ -36,7 +36,7 @@ export default function UIUX() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiSquareLight /> Pixel perfect
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I create clean pixel perfect design to keep it tidy and nice.
 					</p>
 				</li>
@@ -44,7 +44,7 @@ export default function UIUX() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiCircleLight /> Simplicity
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I'm obsessed with simplicity. I hate complex stuff but im open to
 						challenges.
 					</p>

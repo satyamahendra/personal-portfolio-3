@@ -12,7 +12,7 @@ export default function Environment() {
 						<h3 className="flex items-center gap-2 mb-1">
 							<PiUsersThreeLight /> Effective team player
 						</h3>
-						<p className="pl-2 text-sm border-l border-gray-400">
+						<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 							I collaborate with every type of personality and make it work.
 						</p>
 					</div>
@@ -22,7 +22,7 @@ export default function Environment() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiUserLight /> Efficient solo worker
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I don't have to be in a team to be effective. I also find working
 						alone is fun.
 					</p>

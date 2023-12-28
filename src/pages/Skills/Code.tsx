@@ -17,7 +17,7 @@ export default function Code() {
 						<h3 className="flex items-center gap-2 mb-1">
 							<PiCodeLight /> Clean code
 						</h3>
-						<p className="pl-2 text-sm border-l border-gray-400">
+						<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 							I'm capable of creating clean and easy to read code.
 						</p>
 					</div>
@@ -26,7 +26,7 @@ export default function Code() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiFolderLight /> Clean architecture
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						The way i structure my codebase is clean and easy to navigate.
 					</p>
 				</li>
@@ -34,7 +34,7 @@ export default function Code() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiThumbsUpLight /> Following best practices
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I keep on up to date to follow the most recent coding best
 						practices.
 					</p>
@@ -43,7 +43,7 @@ export default function Code() {
 					<h3 className="flex items-center gap-2 mb-1">
 						<PiCubeLight /> Reusable components
 					</h3>
-					<p className="pl-2 text-sm border-l border-gray-400">
+					<p className="pl-2 ml-2 text-sm border-l border-gray-400">
 						I can build reusable components for future use.
 					</p>
 				</li>
