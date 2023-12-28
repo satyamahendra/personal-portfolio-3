@@ -5,21 +5,36 @@ import { Link } from "react-router-dom";
 
 export default function MiddleSection() {
 	return (
-		<div className="w-full flex justify-between sm:p-12 p-4">
+		<div className="flex justify-between w-full p-4 sm:p-12">
 			<section className="flex flex-col justify-center">
-				<nav className="flex flex-col gap-8 text-2xl sm:text-4xl duration-200">
-					<FaLinkedin />
-					<FaInstagram />
-					<FaGithub />
-				</nav>
+				<ul className="flex flex-col gap-8 text-2xl duration-200 sm:text-4xl">
+					<li className="duration-200 hover:scale-125 hover:text-blue-400">
+						<a
+							href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+							target="_blank"
+						>
+							<FaLinkedin />
+						</a>
+					</li>
+					<li className="duration-200 hover:scale-125 hover:text-red-400">
+						<a href="https://www.instagram.com/007satya_/" target="_blank">
+							<FaInstagram />
+						</a>
+					</li>
+					<li className="duration-200 hover:scale-125 hover:text-blue-600">
+						<a href="https://github.com/megatronhehe" target="_blank">
+							<FaGithub />
+						</a>
+					</li>
+				</ul>
 			</section>
 
 			<section className="flex flex-col justify-center mt-32">
 				<Link
 					to="/skills"
-					className="group text-gray-500  rotate-90 origin-top-right flex  items-center gap-4"
+					className="flex items-center gap-4 text-gray-500 duration-200 origin-top-right rotate-90 group hover:-mr-1"
 				>
-					<div className="border p-1 border-gray-400 group-hover:border-black duration-200 group-hover:bg-black group-hover:text-gray-200">
+					<div className="p-1 duration-200 border border-gray-400 group-hover:border-black group-hover:bg-black group-hover:text-gray-200">
 						<PiCaretUpLight />
 					</div>
 					<span className="group-hover">Next page</span>
