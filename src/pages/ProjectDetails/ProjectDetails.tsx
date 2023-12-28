@@ -89,7 +89,7 @@ export default function ProjectDetails() {
 
 			<Link
 				to="/projects"
-				className="fixed bottom-0 flex items-center gap-2 px-3 py-1 mb-4 text-sm duration-200 group hover:-ml-4"
+				className="fixed bottom-0 flex items-center gap-2 mb-5 text-sm duration-200 group hover:-ml-4"
 			>
 				<div className="flex items-center justify-center w-6 h-6 duration-200 border border-gray-400 group-hover:bg-black group-hover:border-black group-hover:text-gray-200">
 					<PiCaretLeftLight />
