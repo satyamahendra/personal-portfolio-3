@@ -1,9 +1,4 @@
-import {
-	// PiPlayFill,
-	// PiCode,
-	// PiImageSquareFill,
-	PiArrowRightLight,
-} from "react-icons/pi";
+import { PiArrowRightLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
 type ProjectPropsType = {
@@ -22,7 +17,10 @@ export default function ProjectCard({ project }: ProjectPropsType) {
 	const { id, title, image } = project;
 
 	return (
-		<li className="relative overflow-hidden text-gray-300 duration-200 h-36 lg:h-full group hover:rounded-3xl">
+		<Link
+			to={`/projects/${id}`}
+			className="relative overflow-hidden text-gray-300 duration-200 h-36 lg:h-full group hover:rounded-3xl"
+		>
 			<img
 				src={image[1]}
 				className="absolute object-cover w-full h-full duration-200 group-hover:scale-110 "
@@ -31,13 +29,10 @@ export default function ProjectCard({ project }: ProjectPropsType) {
 				<h1 className="flex flex-col items-start text-lg duration-200 lg:text-xl lg:self-auto group-hover:text-white">
 					{title}
 				</h1>
-				<Link
-					to={`/projects/${id}`}
-					className="flex items-center self-end gap-2 mr-2 duration-200 hover:mr-0 hover:text-white"
-				>
+				<div className="flex items-center self-end gap-2 mr-2 duration-200 group-hover:mr-0 group-hover:text-white">
 					view project <PiArrowRightLight />
-				</Link>
+				</div>
 			</div>
-		</li>
+		</Link>
 	);
 }

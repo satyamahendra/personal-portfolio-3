@@ -3,7 +3,7 @@ import { PiArrowSquareOutLight } from "react-icons/pi";
 export default function GithubCard() {
 	return (
 		<a
-			href=""
+			href="https://github.com/megatronhehe"
 			target="_blank"
 			className="flex flex-col justify-between p-4 text-gray-600 duration-200 border border-gray-400 group hover:rounded-3xl h-36 lg:h-full"
 		>
