@@ -3,11 +3,24 @@ import { PiCaretUpLight } from "react-icons/pi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-export default function MiddleSection() {
+type SummaryModalPropsType = {
+	toggleSummaryModal: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+export default function MiddleSection({
+	toggleSummaryModal,
+}: SummaryModalPropsType) {
+	const word = "HELLO";
+	const button = word.split("").map((letter) => (
+		<span key={letter} className="-my-0.5">
+			{letter}
+		</span>
+	));
+
 	return (
 		<div className="flex justify-between w-full p-4 sm:p-12">
 			<section className="flex flex-col justify-center">
-				<ul className="flex flex-col gap-8 text-2xl duration-200 sm:text-4xl">
+				<ul className="flex flex-col gap-8 text-3xl duration-200 sm:text-4xl">
 					<li className="duration-200 hover:scale-125 hover:text-blue-400">
 						<a
 							href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
@@ -25,6 +38,14 @@ export default function MiddleSection() {
 						<a href="https://github.com/megatronhehe" target="_blank">
 							<FaGithub />
 						</a>
+					</li>
+					<li>
+						<button
+							onClick={toggleSummaryModal}
+							className="flex flex-col items-center w-full py-2 text-base duration-200 border border-gray-400 hover:border-black hover:bg-black hover:text-gray-200 hover:rounded-xl"
+						>
+							{button}
+						</button>
 					</li>
 				</ul>
 			</section>
