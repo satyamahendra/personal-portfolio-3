@@ -11,8 +11,8 @@ export default function MiddleSection({
 	toggleSummaryModal,
 }: SummaryModalPropsType) {
 	const word = "HELLO";
-	const button = word.split("").map((letter) => (
-		<span key={letter} className="-my-0.5">
+	const button = word.split("").map((letter, i) => (
+		<span key={i} className="-my-0.5">
 			{letter}
 		</span>
 	));
