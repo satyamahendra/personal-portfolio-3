@@ -22,11 +22,23 @@ export default function Contact() {
 							<ContactButton
 								name="Ida Bagus Satya Mahendra"
 								icon={<FaLinkedin />}
-								url=""
+								url="https://www.linkedin.com/in/ida-bagus-satya-mahendra-544129253/"
 							/>
-							<ContactButton name="007satya_" icon={<FaInstagram />} url="" />
-							<ContactButton name="007satya_" icon={<FaDiscord />} url="" />
-							<ContactButton name="007satya_" icon={<FaGithub />} url="" />
+							<ContactButton
+								name="007satya_"
+								icon={<FaInstagram />}
+								url="https://www.instagram.com/007satya_/"
+							/>
+							<ContactButton
+								name="007satya_"
+								icon={<FaDiscord />}
+								url="https://discordapp.com/users/225262332157100034"
+							/>
+							<ContactButton
+								name="007satya_"
+								icon={<FaGithub />}
+								url="https://github.com/megatronhehe"
+							/>
 						</ul>
 					</section>
 
@@ -36,13 +48,17 @@ export default function Contact() {
 							<ContactButton
 								name="satyamahendra09@gmail.com"
 								icon={<FaRegEnvelope />}
-								url=""
+								url="mailto:satyamahendra09@gmail.com"
 							/>
-							<ContactButton name="0822 5410 3639" icon={<FaPhone />} url="" />
+							<ContactButton
+								name="0822 5410 3639"
+								icon={<FaPhone />}
+								url="https://wa.me/6282254103639"
+							/>
 							<ContactButton
 								name="0822 5410 3639"
 								icon={<FaWhatsapp />}
-								url=""
+								url="https://wa.me/6282254103639"
 							/>
 						</ul>
 					</section>

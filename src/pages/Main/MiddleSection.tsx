@@ -23,7 +23,7 @@ export default function MiddleSection({
 				<ul className="flex flex-col gap-8 text-3xl duration-200 sm:text-4xl">
 					<li className="duration-200 hover:scale-125 hover:text-blue-400">
 						<a
-							href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+							href="https://www.linkedin.com/in/ida-bagus-satya-mahendra-544129253/"
 							target="_blank"
 						>
 							<FaLinkedin />
