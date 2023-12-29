@@ -39,13 +39,15 @@ export default function MiddleSection({
 							<FaGithub />
 						</a>
 					</li>
-					<li>
+					<li className="relative group">
 						<button
 							onClick={toggleSummaryModal}
 							className="flex flex-col items-center w-full py-2 text-base duration-200 border border-gray-400 hover:border-black hover:bg-black hover:text-gray-200 hover:rounded-xl"
 						>
 							{button}
 						</button>
+						<div className="absolute group-hover:hidden rotate-45 -top-1.5 -right-1.5 w-3 h-3 bg-black"></div>
+						<div className="animate-ping group-hover:hidden absolute  -top-1.5 -right-1.5 rounded-full w-3 h-3 bg-black"></div>
 					</li>
 				</ul>
 			</section>
