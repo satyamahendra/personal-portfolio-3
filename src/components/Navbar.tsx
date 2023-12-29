@@ -1,22 +1,27 @@
-import { PiDiamondsFourLight } from "react-icons/pi";
+import { PiDiamondsFourLight, PiDiamondsFourFill } from "react-icons/pi";
 import NavbarButton from "./NavbarButton";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<div className="w-full flex justify-between fixed top-0 left-0 sm:p-12 p-4 ">
+		<div className="fixed top-0 left-0 flex justify-between w-full p-4 sm:p-12 ">
 			{/* site name */}
 			<section>
-				<h1 className="text-xl sm:text-2xl flex items-center flex-col">
-					<PiDiamondsFourLight />
+				<Link
+					to="/"
+					className="flex flex-col items-center text-xl group sm:text-2xl"
+				>
+					<PiDiamondsFourLight className="block group-hover:hidden" />
+					<PiDiamondsFourFill className="hidden group-hover:block" />
 					<span>satya.dev</span>
-				</h1>
+				</Link>
 			</section>
 
 			<section className="text-xs">2023 - satya.dev</section>
 
 			{/* navigation */}
 			<section>
-				<nav className="text-lg sm:text-2xl flex flex-col items-end">
+				<nav className="flex flex-col items-end text-lg sm:text-2xl">
 					<NavbarButton to="/" name="Main" />
 					<NavbarButton to="/skills" name="Skills" />
 					<NavbarButton to="/projects" name="Projects" />
