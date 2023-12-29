@@ -19,22 +19,22 @@ export default function SummaryModal({
 					Hello,
 				</h1>
 				<p>
-					My name is Satya. I'm a frontend web developer. I live in Malang and
-					willing to go out of town to seek experience. I strongly understand
-					HTML, CSS, JavaScript, ReactJS, TailwindCSS, UI/UX Fundamentals, API
-					Consumption. good understanding on Typescript, NodeJS, MongoDB,
-					ExpressJS. I keep learning as a developer. I want to be better as a
-					developer and as a person in general. Soon enough I will be a
-					fullstack developer!
+					My name is Satya. I'm a front-end web developer. I live in Malang and
+					am willing to go out of town to seek experience. I strongly understand
+					HTML, CSS, JavaScript, ReactJS, TailwindCSS, UI/UX Fundamentals, and
+					API Consumption. good understanding of Typescript, NodeJS, and
+					MongoDB. I want to be better as a developer and as a person in
+					general. I keep learning as a developer. Soon enough, I will be a
+					full-stack web developer!
 				</p>
 
 				<h2 className="flex items-center gap-2 text-lg">
 					<PiTrophyLight /> Proudest Accomplishment:
 				</h2>
 				<p>
-					I was qualified to be one of 51 other participants out of almost 3000
+					I was qualified to be one of 51 other participants out of almost 3000.
 					registrants to be invited by GoTo (Gojek Tokopedia) to join GoTo
-					Devcamp 2023 on Tokopedia Tower in Jakarta!
+					Devcamp 2023 at Tokopedia Tower in Jakarta!
 				</p>
 				<span>Thank you and nice to meet you!</span>
 
