@@ -23,7 +23,7 @@ export default function Projects() {
 	return (
 		<main className="flex justify-center h-screen">
 			<div className="flex flex-col items-center w-full pt-32 pb-16 duration-200 lg:pb-24 sm:pt-40 max-w-7xl">
-				<h1 className="pb-8 text-2xl">Projects</h1>
+				<h1 className="self-start px-4 pb-4 text-2xl sm:px-12">Projects</h1>
 
 				<ul className="grid w-full h-full gap-2 px-4 overflow-auto text-gray-200 sm:px-12 lg:grid-cols-5">
 					{projectsCardElement}

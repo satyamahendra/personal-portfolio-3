@@ -8,7 +8,7 @@ export default function BottomSection({
 	toggleResumeModal,
 }: ResumeModalPropsType) {
 	return (
-		<div className="fixed bottom-0 left-0 flex items-end justify-between w-full p-4 sm:p-12">
+		<div className="fixed bottom-0 left-0 flex items-end justify-between w-full p-4 duration-200 sm:p-12">
 			{/* name */}
 			<section className="text-2xl sm:text-4xl">
 				<h1 className="flex flex-col">

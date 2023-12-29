@@ -18,7 +18,7 @@ export default function MiddleSection({
 	));
 
 	return (
-		<div className="flex justify-between w-full p-4 sm:p-12">
+		<div className="flex justify-between w-full p-4 duration-200 sm:p-12">
 			<section className="flex flex-col justify-center">
 				<ul className="flex flex-col gap-8 text-3xl duration-200 sm:text-4xl">
 					<li className="duration-200 hover:scale-125 hover:text-blue-400">
