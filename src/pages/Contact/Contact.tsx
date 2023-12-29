@@ -9,16 +9,15 @@ import {
 } from "react-icons/fa6";
 import ContactButton from "./ContactButton";
 
-import { PiDiamondLight } from "react-icons/pi";
 import BottomNav from "../../components/BottomNav";
 
 export default function Contact() {
 	return (
 		<main className="flex justify-center h-screen">
-			<div className="flex flex-col items-center w-full duration-200 max-w-7xl">
-				<div className="flex flex-col items-center justify-center w-full h-full gap-8 px-4 sm:px-12">
+			<div className="flex flex-col items-center w-full duration-200 pt-14 sm:pt-0 max-w-7xl">
+				<div className="flex flex-col items-center justify-center w-full h-full gap-4 px-4 sm:px-12">
 					<section className="flex flex-col items-center">
-						<h1 className="mb-4 text-xl">Social media</h1>
+						<h1 className="self-start mb-4 text-xl">Social media</h1>
 						<ul className="flex flex-col">
 							<ContactButton
 								name="Ida Bagus Satya Mahendra"
@@ -31,10 +30,8 @@ export default function Contact() {
 						</ul>
 					</section>
 
-					<PiDiamondLight className="border-gray-400 border-y" />
-
 					<section className="flex flex-col items-center">
-						<h1 className="mb-4 text-xl">General contact</h1>
+						<h1 className="self-start mb-4 text-xl">General contact</h1>
 						<ul className="flex flex-col">
 							<ContactButton
 								name="satyamahendra09@gmail.com"
