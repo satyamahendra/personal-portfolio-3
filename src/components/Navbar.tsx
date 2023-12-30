@@ -6,7 +6,7 @@ export default function Navbar() {
 	return (
 		<>
 			{/* logo */}
-			<section className="fixed top-0 left-0 p-4 duration-200 sm:p-12">
+			<section className="fixed top-0 left-0 z-10 p-4 duration-200 sm:p-12">
 				<Link
 					to="/"
 					className="flex flex-col items-center text-xl group sm:text-2xl"
@@ -23,7 +23,7 @@ export default function Navbar() {
 			</section>
 
 			{/* navigation */}
-			<section className="fixed top-0 right-0 p-4 duration-200 sm:p-12">
+			<section className="fixed top-0 right-0 z-10 p-4 duration-200 sm:p-12">
 				<nav className="flex flex-col items-end sm:text-lg">
 					<NavbarButton to="/" name="Main" />
 					<NavbarButton to="/skills" name="Skills" />
