@@ -4,7 +4,7 @@ import ImageContainer from "./ImageContainer";
 import { useState } from "react";
 import ResumeModal from "./ResumeModal";
 import SummaryModal from "./SummaryModal";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Main() {
 	const [showResumeModal, setShowResumeModal] = useState(false);
@@ -19,15 +19,22 @@ export default function Main() {
 	}
 
 	return (
-		<main className="flex items-center justify-center h-screen bg-gray-100">
-			{/* IMAGE SECITON */}
-			<ImageContainer />
+		<>
+			<motion.main
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				className="flex items-center justify-center h-screen "
+			>
+				{/* IMAGE SECITON */}
+				<ImageContainer />
 
-			{/* MIDDLE SIDE SECTION */}
-			<MiddleSection toggleSummaryModal={toggleSummaryModal} />
+				{/* MIDDLE SIDE SECTION */}
+				<MiddleSection toggleSummaryModal={toggleSummaryModal} />
 
-			{/* BOTTOM SECTION */}
-			<BottomSection toggleResumeModal={toggleResumeModal} />
+				{/* BOTTOM SECTION */}
+				<BottomSection toggleResumeModal={toggleResumeModal} />
+			</motion.main>
 
 			<AnimatePresence>
 				{showSummaryModal && (
@@ -40,6 +47,6 @@ export default function Main() {
 					<ResumeModal toggleResumeModal={toggleResumeModal} />
 				)}
 			</AnimatePresence>
-		</main>
+		</>
 	);
 }

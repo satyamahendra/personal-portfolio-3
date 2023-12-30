@@ -1,8 +1,15 @@
 import { PiUsersThreeLight, PiUserLight } from "react-icons/pi";
 
+import { motion } from "framer-motion";
+
 export default function Environment() {
 	return (
-		<section className="flex flex-col items-center w-3/5 gap-4 px-4 sm:px-8">
+		<motion.section
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex flex-col items-center w-3/5 gap-4 px-4 sm:px-8"
+		>
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Environment
 			</h2>
@@ -28,6 +35,6 @@ export default function Environment() {
 					</p>
 				</li>
 			</ul>
-		</section>
+		</motion.section>
 	);
 }

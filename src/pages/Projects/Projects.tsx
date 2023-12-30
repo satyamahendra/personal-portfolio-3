@@ -2,6 +2,8 @@ import ProjectCard from "./ProjectCard";
 // @ts-ignore
 import { projectData } from "../../data/projectsData";
 
+import { motion } from "framer-motion";
+
 import GithubCard from "./GithubCard";
 import BottomNav from "../../components/BottomNav";
 
@@ -21,7 +23,12 @@ export default function Projects() {
 	));
 
 	return (
-		<main className="flex justify-center h-screen">
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex justify-center h-screen"
+		>
 			<div className="flex flex-col items-center w-full pt-32 pb-16 duration-200 lg:pb-24 sm:pt-40 max-w-7xl">
 				<h1 className="self-start px-4 pb-4 text-2xl sm:px-12">Projects</h1>
 
@@ -37,6 +44,6 @@ export default function Projects() {
 				nextPageName="Contact"
 				nextUrl="/contact"
 			/>
-		</main>
+		</motion.main>
 	);
 }

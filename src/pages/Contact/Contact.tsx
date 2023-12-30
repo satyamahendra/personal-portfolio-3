@@ -10,10 +10,16 @@ import {
 import ContactButton from "./ContactButton";
 
 import BottomNav from "../../components/BottomNav";
+import { motion } from "framer-motion";
 
 export default function Contact() {
 	return (
-		<main className="flex justify-center h-screen">
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex justify-center h-screen"
+		>
 			<div className="flex flex-col items-center w-full duration-200 pt-14 sm:pt-0 max-w-7xl">
 				<div className="flex flex-col items-center justify-center w-full h-full gap-4 px-4 sm:px-12">
 					<section className="flex flex-col items-center">
@@ -71,6 +77,6 @@ export default function Contact() {
 				nextPageName="Main"
 				nextUrl="/"
 			/>
-		</main>
+		</motion.main>
 	);
 }

@@ -1,9 +1,16 @@
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa6";
 import { SiTailwindcss, SiTypescript, SiJavascript } from "react-icons/si";
 
+import { motion } from "framer-motion";
+
 export default function Techstack() {
 	return (
-		<section className="flex flex-col items-center w-3/5 gap-4 px-4 sm:px-8">
+		<motion.section
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex flex-col items-center w-3/5 gap-4 px-4 sm:px-8"
+		>
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Tech stack
 			</h2>
@@ -46,6 +53,6 @@ export default function Techstack() {
 					TypeScript
 				</li>
 			</ul>
-		</section>
+		</motion.section>
 	);
 }

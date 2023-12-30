@@ -4,9 +4,16 @@ import { PiGearLight } from "react-icons/pi";
 import NavbarButton from "./NavbarButton";
 import BottomNav from "../../components/BottomNav";
 
+import { motion } from "framer-motion";
+
 export default function Skills() {
 	return (
-		<main className="flex justify-center h-screen">
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex justify-center h-screen"
+		>
 			<div className="flex w-full max-w-3xl pt-32 pb-16 pr-4 sm:pr-8">
 				<Outlet />
 
@@ -34,6 +41,6 @@ export default function Skills() {
 				nextPageName="Projects"
 				nextUrl="/projects"
 			/>
-		</main>
+		</motion.main>
 	);
 }
