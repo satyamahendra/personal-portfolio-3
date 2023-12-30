@@ -1,5 +1,6 @@
 import { PiXLight, PiHandWavingLight, PiTrophyLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 type SummaryModalPropsType = {
 	toggleSummaryModal: React.MouseEventHandler<HTMLDivElement>;
@@ -9,7 +10,10 @@ export default function SummaryModal({
 	toggleSummaryModal,
 }: SummaryModalPropsType) {
 	return (
-		<div
+		<motion.div
+			initial={{ opacity: 0, y: -10 }}
+			animate={{ opacity: 1, y: 10 }}
+			exit={{ opacity: 0, y: -10 }}
 			onClick={toggleSummaryModal}
 			className="fixed top-0 left-0 z-20 flex items-center justify-center w-full h-full p-8 backdrop-blur-sm"
 		>
@@ -48,6 +52,6 @@ export default function SummaryModal({
 					<PiXLight />
 				</button>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

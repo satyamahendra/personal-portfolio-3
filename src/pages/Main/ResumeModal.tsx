@@ -1,5 +1,7 @@
 import { PiReadCvLogoLight, PiXLight } from "react-icons/pi";
 
+import { motion } from "framer-motion";
+
 type ResumeModalPropsType = {
 	toggleResumeModal: React.MouseEventHandler<HTMLDivElement>;
 };
@@ -8,7 +10,10 @@ export default function ResumeModal({
 	toggleResumeModal,
 }: ResumeModalPropsType) {
 	return (
-		<div
+		<motion.div
+			initial={{ opacity: 0, y: -10 }}
+			animate={{ opacity: 1, y: 10 }}
+			exit={{ opacity: 0, y: -10 }}
 			onClick={toggleResumeModal}
 			className="fixed top-0 left-0 z-20 flex items-center justify-center w-full h-full backdrop-blur-sm"
 		>
@@ -40,6 +45,6 @@ export default function ResumeModal({
 					<PiXLight />
 				</button>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

@@ -4,6 +4,7 @@ import ImageContainer from "./ImageContainer";
 import { useState } from "react";
 import ResumeModal from "./ResumeModal";
 import SummaryModal from "./SummaryModal";
+import { AnimatePresence } from "framer-motion";
 
 export default function Main() {
 	const [showResumeModal, setShowResumeModal] = useState(false);
@@ -28,11 +29,17 @@ export default function Main() {
 			{/* BOTTOM SECTION */}
 			<BottomSection toggleResumeModal={toggleResumeModal} />
 
-			{showSummaryModal && (
-				<SummaryModal toggleSummaryModal={toggleSummaryModal} />
-			)}
+			<AnimatePresence>
+				{showSummaryModal && (
+					<SummaryModal toggleSummaryModal={toggleSummaryModal} />
+				)}
+			</AnimatePresence>
 
-			{showResumeModal && <ResumeModal toggleResumeModal={toggleResumeModal} />}
+			<AnimatePresence>
+				{showResumeModal && (
+					<ResumeModal toggleResumeModal={toggleResumeModal} />
+				)}
+			</AnimatePresence>
 		</main>
 	);
 }
