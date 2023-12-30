@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<div className="fixed top-0 left-0 flex justify-between w-full p-4 duration-200 sm:p-12">
-			{/* site name */}
-			<section>
+		<>
+			{/* logo */}
+			<section className="fixed top-0 left-0 p-4 duration-200 sm:p-12">
 				<Link
 					to="/"
 					className="flex flex-col items-center text-xl group sm:text-2xl"
@@ -17,10 +17,13 @@ export default function Navbar() {
 				</Link>
 			</section>
 
-			<section className="text-xs">2023 - satya.dev</section>
+			{/* trademark */}
+			<section className="fixed top-0 left-0 w-full p-4 text-center duration-200 sm:p-12">
+				2023 - satya.dev
+			</section>
 
 			{/* navigation */}
-			<section>
+			<section className="fixed top-0 right-0 p-4 duration-200 sm:p-12">
 				<nav className="flex flex-col items-end text-lg sm:text-2xl">
 					<NavbarButton to="/" name="Main" />
 					<NavbarButton to="/skills" name="Skills" />
@@ -28,6 +31,6 @@ export default function Navbar() {
 					<NavbarButton to="/contact" name="Contact" />
 				</nav>
 			</section>
-		</div>
+		</>
 	);
 }
