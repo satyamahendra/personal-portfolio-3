@@ -18,13 +18,13 @@ export default function Navbar() {
 			</section>
 
 			{/* trademark */}
-			<section className="fixed top-0 left-0 w-full p-4 text-center duration-200 sm:p-12">
+			<section className="fixed top-0 left-0 w-full p-4 text-xs text-center duration-200 sm:p-12">
 				2023 - satya.dev
 			</section>
 
 			{/* navigation */}
 			<section className="fixed top-0 right-0 p-4 duration-200 sm:p-12">
-				<nav className="flex flex-col items-end text-lg sm:text-2xl">
+				<nav className="flex flex-col items-end sm:text-lg">
 					<NavbarButton to="/" name="Main" />
 					<NavbarButton to="/skills" name="Skills" />
 					<NavbarButton to="/projects" name="Projects" />
