@@ -35,6 +35,16 @@ export default function ProjectDetails() {
 
 	const { title, description, features, image, techs, sc } = thisProject;
 
+	const imagesIndexElement = image.map((img: string, i: number) => (
+		<button
+			key={img}
+			onClick={() => setIndex(i)}
+			className={`duration-200 h-2 w-2  rotate-45 ${
+				i === index ? "scale-150 bg-white" : "bg-gray-400"
+			}`}
+		></button>
+	));
+
 	const techsElement = techs.map((tech: string, i: number) => (
 		<li
 			key={i}
@@ -66,7 +76,7 @@ export default function ProjectDetails() {
 		>
 			<div className="flex flex-col w-full pt-40 pb-16 duration-200 lg:pb-24 sm:pt-48 max-w-7xl">
 				<div className="flex flex-col w-full h-full gap-4 px-4 pt-8 overflow-auto sm:flex-row sm:px-12">
-					<section className="relative border border-gray-400 sm:w-2/3 aspect-video">
+					<section className="relative flex justify-center border border-gray-400 sm:w-2/3 aspect-video">
 						<div className="absolute z-10 flex w-full h-full ">
 							<button
 								className="flex items-center justify-start w-1/2 px-2 duration-200 group"
@@ -90,6 +100,9 @@ export default function ProjectDetails() {
 							src={image[index]}
 							className="object-cover w-full h-full aspect-square lg:aspect-video"
 						/>
+						<div className="absolute bottom-0 z-10 flex gap-3 p-3 bg-black rounded-full bg-opacity-45 backdrop-blur-sm">
+							{imagesIndexElement}
+						</div>
 					</section>
 
 					<aside className="flex flex-col items-center gap-4 sm:w-1/3">
