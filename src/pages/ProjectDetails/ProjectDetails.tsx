@@ -11,10 +11,13 @@ import { useState } from "react";
 
 import { motion } from "framer-motion";
 
+import { PiArrowSquareOutLight, PiCodeLight, PiPlayFill } from "react-icons/pi";
+
 type ProjectType = {
 	id: number;
 	title: string;
 	logo: string;
+	techs: string[];
 	description: string;
 	features: string[];
 	image: string[];
@@ -30,7 +33,16 @@ export default function ProjectDetails() {
 		(project: ProjectType) => project.id.toString() === id
 	);
 
-	const { title, description, features, image } = thisProject;
+	const { title, description, features, image, techs, sc } = thisProject;
+
+	const techsElement = techs.map((tech: string, i: number) => (
+		<li
+			key={i}
+			className="flex-grow px-3 py-2 text-sm text-center border border-gray-400 "
+		>
+			{tech}
+		</li>
+	));
 
 	const featuresElement = features.map((feature: string, i: number) => (
 		<li key={i} className="flex items-center gap-2 text-sm">
@@ -80,17 +92,43 @@ export default function ProjectDetails() {
 						/>
 					</section>
 
-					<section className="flex flex-col items-center gap-4 sm:w-1/3">
-						<div className="w-full p-4 border border-gray-400">
+					<aside className="flex flex-col items-center gap-4 sm:w-1/3">
+						<section className="w-full p-4 border border-gray-400">
 							<h1 className="w-full mb-4 text-xl text-center ">{title}</h1>
 							<p className="text-sm">{description}</p>
-						</div>
+						</section>
 
-						<div className="w-full p-4 border border-gray-400">
+						<section>
+							<ul className="flex flex-wrap gap-4">{techsElement}</ul>
+						</section>
+
+						<section className="w-full p-4 border border-gray-400">
 							<h2 className="w-full mb-4 text-xl text-center ">Features</h2>
 							<ul className="flex flex-col w-full gap-2">{featuresElement}</ul>
-						</div>
-					</section>
+						</section>
+
+						<section className="flex w-full h-full gap-4">
+							<a
+								href={sc}
+								target="_blank"
+								className="flex flex-row-reverse items-end justify-between w-1/2 p-4 text-gray-200 duration-200 bg-black border border-black group hover:bg-gray-100 hover:rounded-xl hover:border-gray-400 hover:text-gray-500 lg:flex-col"
+							>
+								<PiArrowSquareOutLight className="hidden text-2xl group-hover:block" />
+								<PiCodeLight className="block text-2xl group-hover:hidden" />
+								<span className="self-start">Source code</span>
+							</a>
+							<button className="flex flex-row-reverse items-end justify-between w-1/2 p-4 text-gray-500 duration-200 bg-gray-300 border border-gray-300 cursor-not-allowed group hover:bg-gray-100 hover:rounded-xl hover:border-gray-400 hover:text-gray-500 lg:flex-col">
+								<PiArrowSquareOutLight className="hidden text-2xl group-hover:block" />
+								<PiPlayFill className="block text-2xl group-hover:hidden" />
+								<span className="self-start block group-hover:hidden">
+									Live demo
+								</span>
+								<span className="self-start hidden group-hover:block">
+									not available yet, sorry!
+								</span>
+							</button>
+						</section>
+					</aside>
 				</div>
 			</div>
 
