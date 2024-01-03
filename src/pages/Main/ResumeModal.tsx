@@ -26,7 +26,7 @@ export default function ResumeModal({
 				</h1>
 				<div className="flex items-center gap-4">
 					<a
-						href="https://drive.google.com/file/d/1mKGAvG3aw02XG_QKUkAz_hN8Tyml0-RE/view?usp=drive_link"
+						href="https://drive.google.com/file/d/1a-aIr6FPmX5RG9BU31yDV2eYXr54Q0pq/view?usp=drive_link"
 						target="_blank"
 						className="px-3 py-2 text-center text-gray-200 duration-200 bg-black border border-black hover:bg-gray-100 hover:text-gray-500 hover:border-gray-500 hover:rounded-none rounded-xl"
 					>
@@ -34,7 +34,7 @@ export default function ResumeModal({
 					</a>
 					<span>or</span>
 					<a
-						href="https://drive.google.com/file/d/1MWMsh4ilYGUpq7uRPUI6_maKg0fnICvI/view?usp=drive_link"
+						href="https://drive.google.com/file/d/1uQ8mm74HYG93aiFDr-OuEOcIzsSS61db/view?usp=drive_link"
 						target="_blank"
 						className="px-3 py-2 text-center text-gray-200 duration-200 bg-black border border-black hover:bg-gray-100 hover:text-gray-500 hover:border-gray-500 hover:rounded-none rounded-xl"
 					>
