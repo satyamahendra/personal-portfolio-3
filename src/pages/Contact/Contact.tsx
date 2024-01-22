@@ -41,7 +41,7 @@ export default function Contact() {
 								url="https://discordapp.com/users/225262332157100034"
 							/>
 							<ContactButton
-								name="007satya_"
+								name="megatronhehe"
 								icon={<FaGithub />}
 								url="https://github.com/megatronhehe"
 							/>

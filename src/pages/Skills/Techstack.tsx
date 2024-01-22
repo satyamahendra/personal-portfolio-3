@@ -1,9 +1,29 @@
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa6";
-import { SiTailwindcss, SiTypescript, SiJavascript } from "react-icons/si";
+import {
+	SiTailwindcss,
+	SiTypescript,
+	SiJavascript,
+	SiNextdotjs,
+} from "react-icons/si";
 
 import { motion } from "framer-motion";
+import TechStackItem from "../../components/TechStackItem";
 
 export default function Techstack() {
+	const techStacks = [
+		{ name: "HTML5", icon: <FaHtml5 />, color: "text-orange-400" },
+		{ name: "CSS3", icon: <FaCss3Alt />, color: "text-blue-400" },
+		{ name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-400" },
+		{ name: "TypeScript", icon: <SiTypescript />, color: "text-blue-400" },
+		{ name: "React.JS", icon: <FaReact />, color: "text-blue-300" },
+		{
+			name: "Tailwind.CSS",
+			icon: <SiTailwindcss />,
+			color: "text-purple-400",
+		},
+		{ name: "Next.JS", icon: <SiNextdotjs />, color: "" },
+	];
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -14,44 +34,15 @@ export default function Techstack() {
 			<h2 className="w-full pb-4 text-xl text-center border-b border-gray-400">
 				Tech stack
 			</h2>
-			<ul className="flex flex-col gap-2 overflow-auto text-sm font-normal tracking-wide duration-200 sm:gap-4">
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-orange-400 rounded-xl">
-						<FaHtml5 className="text-3xl text-white" />
-					</div>
-					HTML5
-				</li>
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-blue-400 rounded-xl">
-						<FaCss3Alt className="text-3xl text-white" />
-					</div>
-					CSS3
-				</li>
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-yellow-400 rounded-xl">
-						<SiJavascript className="text-3xl text-white" />
-					</div>
-					JavaScript
-				</li>
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-blue-300 rounded-xl">
-						<FaReact className="text-3xl text-white" />
-					</div>
-					ReactJS
-				</li>
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-purple-400 rounded-xl">
-						<SiTailwindcss className="text-3xl text-white" />
-					</div>
-					TailwindCSS
-				</li>
-
-				<li className="flex items-center gap-4 ">
-					<div className="p-2 bg-blue-400 rounded-xl">
-						<SiTypescript className="text-3xl text-white" />
-					</div>
-					TypeScript
-				</li>
+			<ul className="flex flex-col gap-2 overflow-auto text-sm font-bold tracking-widest duration-200 sm:gap-4">
+				{techStacks.map((item) => (
+					<TechStackItem
+						key={item.name}
+						icon={item.icon}
+						name={item.name}
+						color={item.color}
+					/>
+				))}
 			</ul>
 		</motion.section>
 	);
