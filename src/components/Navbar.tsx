@@ -3,6 +3,8 @@ import NavbarButton from "./NavbarButton";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+	const thisYear = new Date().getFullYear();
+
 	return (
 		<>
 			{/* logo */}
@@ -19,7 +21,7 @@ export default function Navbar() {
 
 			{/* trademark */}
 			<section className="fixed top-0 left-0 w-full p-4 text-xs text-center duration-200 sm:p-12">
-				2023 - satya.dev
+				{thisYear} - satya.dev
 			</section>
 
 			{/* navigation */}
