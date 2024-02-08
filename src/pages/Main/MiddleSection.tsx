@@ -35,7 +35,7 @@ export default function MiddleSection({
 						</a>
 					</li>
 					<li className="duration-200 hover:scale-125 hover:text-blue-600">
-						<a href="https://github.com/megatronhehe" target="_blank">
+						<a href="https://github.com/satyamahendra" target="_blank">
 							<FaGithub />
 						</a>
 					</li>

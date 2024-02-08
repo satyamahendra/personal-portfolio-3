@@ -66,7 +66,7 @@ export const projectData = [
 			ecommerce6,
 			ecommerce7,
 		],
-		sc: "https://github.com/megatronhehe/ecommerce-2",
+		sc: "https://github.com/satyamahendra/ecommerce-2",
 	},
 	{
 		id: 1,
@@ -88,7 +88,7 @@ export const projectData = [
 			"Mark order as completed",
 		],
 		image: [orderpanel1, orderpanel2, orderpanel3, orderpanel4],
-		sc: "https://github.com/megatronhehe/food-ordering-panel",
+		sc: "https://github.com/satyamahendra/food-ordering-panel",
 	},
 	{
 		id: 2,
@@ -118,7 +118,7 @@ export const projectData = [
 			watchlist6,
 			watchlist7,
 		],
-		sc: "https://github.com/megatronhehe/movie-watchlist-2",
+		sc: "https://github.com/satyamahendra/movie-watchlist-2",
 	},
 	{
 		id: 3,
@@ -141,7 +141,7 @@ export const projectData = [
 			"Mark an event on a date",
 			"Responsive design",
 		],
-		sc: "https://github.com/megatronhehe/calendar-app",
+		sc: "https://github.com/satyamahendra/calendar-app",
 	},
 	// {
 	// 	id: 4,
@@ -151,6 +151,6 @@ export const projectData = [
 	// 		"Personal real estate website that showcase personal real estates for sale",
 	// 	image: [realestate1, realestate2, realestate3, realestate4, realestate5],
 	// 	features: ["Showcase real estate", "Responsive design"],
-	// 	sc: "https://github.com/megatronhehe/calendar-app",
+	// 	sc: "https://github.com/satyamahendra/calendar-app",
 	// },
 ];
